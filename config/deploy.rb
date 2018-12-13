@@ -2,7 +2,7 @@
 lock '3.4.1'
 
 set :application, 'gemserver'
-# set :repo_url, 'git@example.com:me/my_repo.git'
+set :repo_url, 'git@github.com:emirikol/gemserver.git'
 
 set :rvm_ruby_version, "2.3.7"
 set :rvm_type, :system
@@ -12,7 +12,6 @@ set :rvm_roles, [:all]
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, ->{ "/home/#{fetch(:user)}/apps/gemserver_#{fetch(:rack_env)}/" }
-set :rsync_stage, "."
 # Default value for :scm is :git
 # set :scm, :git
 
